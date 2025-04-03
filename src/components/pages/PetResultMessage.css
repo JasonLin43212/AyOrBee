@@ -1,0 +1,5 @@
+.pet-result-message .letter {
+  height: unset;
+  min-height: calc(0.2 * var(--min-dimension));
+  margin: var(--common-gap);
+}

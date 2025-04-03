@@ -1,0 +1,21 @@
+.image-choice-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--common-gap);
+  column-gap: var(--common-gap);
+  row-gap: var(--common-gap);
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.image-choice img {
+  --image-choice-length: calc(0.5 * var(--min-dimension) - 2 * var(--common-gap));
+  width: var(--image-choice-length);
+  height: var(--image-choice-length);
+  border-radius: var(--common-border-radius);
+}
+
+.filler {
+  flex-grow: 1;
+}

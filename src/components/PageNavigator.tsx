@@ -36,7 +36,7 @@ const PAGES: React.FC<PageProps>[] = [
 ];
 
 export const PageNavigator: React.FC = () => {
-  const [pageNumber, setPageNumber] = useState(4);
+  const [pageNumber, setPageNumber] = useState(6);
   const incrementPage = () => {
     setPageNumber(pageNumber + 1);
   };

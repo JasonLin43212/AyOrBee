@@ -1,0 +1,5 @@
+.small-image-wrapper .dog-eat {
+  width: 100%;
+  height: 95%;
+  border-radius: var(--common-border-radius);
+}

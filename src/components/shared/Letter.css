@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: calc(0.05 * var(--min-dimension));
 }
 
 .letter {

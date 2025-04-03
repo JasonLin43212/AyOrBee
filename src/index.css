@@ -33,3 +33,8 @@ body {
   row-gap: var(--common-gap);
   font-size: var(--common-font-size);
 }
+
+.normal-text {
+  text-align: center;
+  padding: var(--common-gap);
+}

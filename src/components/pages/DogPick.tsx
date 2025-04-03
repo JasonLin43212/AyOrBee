@@ -13,8 +13,9 @@ import muffin2 from '../../images/dog/muffin_2.png';
 import muffin3 from '../../images/dog/muffin_3.png';
 import muffin4 from '../../images/dog/muffin_4.png';
 import muffin5 from '../../images/dog/muffin_5.png';
-import { getNRandomInts, getRandomInt, pickRandomItemFromArray, pickRandomUniqueItemsFromArray, shuffleArray } from '../../utils';
+import { pickRandomItemFromArray, pickRandomUniqueItemsFromArray, shuffleArray } from '../../utils';
 import { ImageChoice, ImagePicker } from '../shared/ImagePicker';
+import './DogPick.css';
 
 const dogs = [dog1, dog2, dog3, dog4, dog5];
 const muffins = [muffin1, muffin2, muffin3, muffin4, muffin5];
@@ -55,11 +56,15 @@ const dogChoices: ImageChoice[] = [
 shuffleArray(dogChoices);
 
 export const DogPick: React.FC<PageProps> = (props: PageProps) => {
-  return <div>
-    You chased the dog until you cornered it at a bakery. Catch it!
+  return <>
+    <div className={"normal-text"}>
+      You chased the Happy Pup until you cornered it at a bakery.
+      <div className={"catch-it"}>Catch it!</div>
+    </div>
+
     <ImagePicker
       choices={dogChoices}
       incrementPage={props.incrementPage}
     />
-  </div>;
+  </>;
 }

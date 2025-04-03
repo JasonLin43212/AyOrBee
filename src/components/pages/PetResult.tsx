@@ -8,7 +8,7 @@ import './PetResult.css';
 
 export const PetResult: React.FC<PageProps> = (props: PageProps) => {
   return <>
-    <div className={"happy-pup-wrapper"}>
+    <div className={"small-image-wrapper"}>
       <img src={happyPup} className={"happy-pup"} />
     </div>
     <Letter centered padding>
