@@ -1,0 +1,35 @@
+:root {
+  --space-cadet: #283044ff;
+  --air-superiority-blue: #78a1bbff;
+  --mint-cream: #ebf5eeff;
+  --khaki: #bfa89eff;
+  --cinereous: #8b786dff;
+  --persian-orange: #bf885c;
+
+  --main-font: Tahoma, sans-serif;
+  --letter-font: 'Brush Script MT', cursive;
+
+  --min-dimension: min(100vh, 100vw);
+  --common-gap: calc(0.05 * var(--min-dimension));
+  --common-font-size: calc(0.07 * var(--min-dimension));
+  --large-font-size: calc(0.08 * var(--min-dimension));
+  --common-border-radius: calc(0.02 * var(--min-dimension));
+  --full-width: calc(0.9 * var(--min-dimension));
+}
+
+body {
+  background-color: var(--air-superiority-blue);
+  font-family: var(--main-font);
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  row-gap: var(--common-gap);
+  font-size: var(--common-font-size);
+}

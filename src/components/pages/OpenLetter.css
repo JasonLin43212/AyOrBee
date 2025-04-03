@@ -1,0 +1,11 @@
+.open-letter .letter-from {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.open-letter .letter-to {
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+}

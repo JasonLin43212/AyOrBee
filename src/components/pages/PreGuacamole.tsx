@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { PageProps } from '../PageNavigator';
 
-export const AfterGuacamole: React.FC<PageProps> = (props: PageProps) => {
+export const PreGuacamole: React.FC<PageProps> = (props: PageProps) => {
   return <div>
-    I hope you like guacamole! Too bad there isn't a bird that looks like tomato egg. Anyway...
+    I left my present for you back in Boston.
+    Instead, let's celebrate with some virtual guacamole.
     <button onClick={() => props.incrementPage()}>Next</button>
   </div>;
 }

@@ -1,0 +1,29 @@
+.next-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: var(--common-gap);
+  align-self: flex-end;
+  padding: 0 var(--common-gap) var(--common-gap) 0;
+}
+
+.next-button-wrapper .next-button-side-text {
+  color: var(--space-cadet);
+  font-weight: bold;
+  font-size: calc(0.05 * var(--min-dimension));
+}
+
+.next-button-wrapper .next-button {
+  --button-side-length: calc(0.2 * var(--min-dimension));
+  background-color: var(--persian-orange);
+  width: var(--button-side-length);
+  height: var(--button-side-length);
+  border: 3px solid var(--space-cadet);
+  border-radius: 50%;
+}
+
+.next-button-wrapper .next-button .next-button-inner-text {
+  color: var(--mint-cream);
+  font-size: calc(0.13 * var(--min-dimension));
+  font-weight: bold;
+}

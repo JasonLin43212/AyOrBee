@@ -11,32 +11,38 @@ import { AfterDogMessage } from './pages/AfterDogMessage';
 import { Guacamole } from './pages/Guacamole';
 import { End } from './pages/End';
 import { AfterGuacamole } from './pages/AfterGuacamole';
+import { PreGuacamole } from './pages/PreGuacamole';
+import { PreEndMessage } from './pages/PreEnd';
 
 export type PageProps = {
   incrementPage: () => void;
 }
 
 const PAGES: React.FC<PageProps>[] = [
-  OpenLetter,
-  HappyBirthday,
-  BirthdayMessage,
-  PetResult,
-  PetResultMessage,
-  DogEats,
-  DogPick,
-  AfterDogMessage,
-  RemainingMessage,
-  Guacamole,
-  AfterGuacamole,
-  End
+  OpenLetter,           // 0
+  HappyBirthday,        // 1
+  BirthdayMessage,      // 2
+  PetResult,            // 3
+  PetResultMessage,     // 4
+  DogEats,              // 5
+  DogPick,              // 6 
+  AfterDogMessage,      // 7
+  RemainingMessage,     // 8
+  PreGuacamole,         // 9
+  Guacamole,            // 10
+  AfterGuacamole,       // 11
+  PreEndMessage,        // 12
+  End                   // 13
 ];
 
 export const PageNavigator: React.FC = () => {
-  const [pageNumber, setPageNumber] = useState(0);
+  const [pageNumber, setPageNumber] = useState(4);
   const incrementPage = () => {
     setPageNumber(pageNumber + 1);
   };
 
   const CurrentPage: React.FC<PageProps> = PAGES[pageNumber];
-  return <CurrentPage incrementPage={incrementPage} />;
+  return <div className={"page-wrapper"}>
+    <CurrentPage incrementPage={incrementPage} />
+  </div>;
 };

@@ -1,0 +1,13 @@
+.happy-pup-wrapper {
+  width: var(--full-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.happy-pup-wrapper .happy-pup {
+  width: 100%;
+  height: 95%;
+  border-radius: var(--common-border-radius);
+}
