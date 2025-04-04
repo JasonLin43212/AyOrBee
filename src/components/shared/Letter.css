@@ -1,4 +1,5 @@
 .letter-wrapper {
+  padding-top: var(--common-gap);
   flex-grow: 1;
   display: flex;
   justify-content: center;

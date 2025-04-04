@@ -1,5 +1,4 @@
 .open-letter {
-  padding-top: var(--common-gap);
   animation-name: letter-appear;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
