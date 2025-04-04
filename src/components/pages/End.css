@@ -1,0 +1,13 @@
+.end-image-wrapper {
+  margin: var(--common-gap);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.end-image-wrapper img {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--common-border-radius);
+}

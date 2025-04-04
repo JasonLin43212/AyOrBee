@@ -53,11 +53,13 @@ const guacChoices: ImageChoice[] = [
 shuffleArray(guacChoices);
 
 export const Guacamole: React.FC<PageProps> = (props: PageProps) => {
-  return <div>
-    Pick your favorite guacamole!
+  return <>
+    <div className={"normal-text"}>
+      Pick your favorite guacamole!
+    </div>
     <ImagePicker
       choices={guacChoices}
       incrementPage={props.incrementPage}
     />
-  </div>;
+  </>;
 }

@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { PageProps } from '../PageNavigator';
+import { Letter } from '../shared/Letter';
+import { MyButton } from '../shared/MyButton';
 
 export const PreGuacamole: React.FC<PageProps> = (props: PageProps) => {
-  return <div>
-    I left my present for you back in Boston.
-    Instead, let's celebrate with some virtual guacamole.
-    <button onClick={() => props.incrementPage()}>Next</button>
-  </div>;
+  return <>
+    <Letter padding centered>
+      <div>
+        I will give you your present when we go back to Boston.
+        For now, let's celebrate with some virtual guacamole!
+      </div>
+    </Letter>
+    <MyButton
+      text={"Look at guacamole!"}
+      onClick={props.incrementPage}
+    />
+  </>
 }

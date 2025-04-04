@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PageProps } from '../PageNavigator';
 import dogEat from '../../images/dogEatingPaper.png';
-import { NextButton } from '../shared/NextButton';
+import { MyButton } from '../shared/MyButton';
 import './DogEat.css';
 import { Letter } from '../shared/Letter';
 
@@ -13,9 +13,9 @@ export const DogEats: React.FC<PageProps> = (props: PageProps) => {
     <div className={"normal-text"}>
       Suddenly, out of nowhere, the Happy Pup snatches the letter from you and runs away!
     </div>
-    <NextButton
+    <MyButton
       text={"Chase It!"}
-      incrementPage={props.incrementPage}
+      onClick={props.incrementPage}
     />
   </>
 }

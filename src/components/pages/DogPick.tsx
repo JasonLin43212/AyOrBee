@@ -23,7 +23,7 @@ const correctMessages: string[] = [
   "Good job, Brie! You caught the dog.",
   "Hooray, the dog has been caught.",
   "Nice! The dog has been caught red-paw-ed.",
-  "Yippee! You got your card back from the dog."
+  "Yippee! You got your birthday card back from the dog."
 ];
 
 const incorrectMessages: string[] = [
@@ -59,7 +59,7 @@ export const DogPick: React.FC<PageProps> = (props: PageProps) => {
   return <>
     <div className={"normal-text"}>
       You chased the Happy Pup until you cornered it at a bakery.
-      <div className={"catch-it"}>Catch it!</div>
+      <div className={"bold-text"}>Catch it!</div>
     </div>
 
     <ImagePicker

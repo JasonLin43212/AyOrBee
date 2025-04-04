@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PageProps } from '../PageNavigator';
 import './OpenLetter.css';
-import { NextButton } from '../shared/NextButton';
+import { MyButton } from '../shared/MyButton';
 import { Letter } from '../shared/Letter';
 
 export const OpenLetter: React.FC<PageProps> = (props: PageProps) => {
@@ -12,6 +12,6 @@ export const OpenLetter: React.FC<PageProps> = (props: PageProps) => {
       <span className={"letter-from"}>From: Jason</span>
       <span className={"letter-to"}>To: Brie</span>
     </Letter>
-    <NextButton text={"Open Letter"} incrementPage={props.incrementPage} />
+    <MyButton text={"Open Letter"} onClick={props.incrementPage} />
   </>;
 }

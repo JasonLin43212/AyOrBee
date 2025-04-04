@@ -1,19 +1,28 @@
-.next-button-wrapper {
+.my-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: var(--common-gap);
-  align-self: flex-end;
-  padding: 0 var(--common-gap) var(--common-gap) 0;
+  padding: 0 var(--common-gap) var(--common-gap);
 }
 
-.next-button-wrapper .next-button-side-text {
+.forward-button-wrapper {
+  align-self: flex-end;
+  flex-direction: row;
+}
+
+.back-button-wrapper {
+  align-self: flex-start;
+  flex-direction: row-reverse;
+}
+
+.my-button-wrapper .my-button-side-text {
   color: var(--space-cadet);
   font-weight: bold;
   font-size: calc(0.05 * var(--min-dimension));
 }
 
-.next-button-wrapper .next-button {
+.my-button-wrapper .my-button {
   --button-side-length: calc(0.2 * var(--min-dimension));
   background-color: var(--persian-orange);
   width: var(--button-side-length);
@@ -22,7 +31,7 @@
   border-radius: 50%;
 }
 
-.next-button-wrapper .next-button .next-button-inner-text {
+.my-button-wrapper .my-button .my-button-inner-text {
   color: var(--mint-cream);
   font-size: calc(0.13 * var(--min-dimension));
   font-weight: bold;

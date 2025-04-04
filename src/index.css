@@ -38,3 +38,7 @@ body {
   text-align: center;
   padding: var(--common-gap);
 }
+
+.bold-text {
+  font-weight: bold;
+}

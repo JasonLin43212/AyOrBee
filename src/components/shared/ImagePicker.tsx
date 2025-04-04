@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ImagePicker.css';
+import { MyButton } from './MyButton';
 
 export type ImageChoice = {
   image: React.ReactNode;
@@ -25,12 +26,26 @@ export const ImagePicker: React.FC<ImagePickerProps> = (props: ImagePickerProps)
 
   let selectedImageElement: React.ReactNode = <></>;
   if (selectedImageChoice) {
-    selectedImageElement = <div>
-      {selectedImageChoice.image}
-      <div>{selectedImageChoice.message}</div>
-      <button onClick={() => { props.incrementPage(); }}>
-        {correctIndex === selectedIndex ? "Continue reading letter" : "Keep looking"}
-      </button>
+    const isCorrect: boolean = correctIndex === selectedIndex;
+    selectedImageElement = <div className={"selected-image-wrapper"}>
+      <div className={"selected-image"}>
+        <div className={"selected-image-inner"}>
+          {selectedImageChoice.image}
+        </div>
+      </div>
+      <div className={"selected-message"}>{selectedImageChoice.message}</div>
+
+      <MyButton
+        text={isCorrect ? "Continue" : "Keep looking"}
+        onClick={() => {
+          if (isCorrect) {
+            props.incrementPage()
+          } else {
+            setSelectedIndex(undefined);
+          }
+        }}
+        back={!isCorrect}
+      />
     </div>;
   }
 

@@ -36,9 +36,10 @@ const PAGES: React.FC<PageProps>[] = [
 ];
 
 export const PageNavigator: React.FC = () => {
-  const [pageNumber, setPageNumber] = useState(6);
+  const [pageNumber, setPageNumber] = useState(0);
   const incrementPage = () => {
     setPageNumber(pageNumber + 1);
+    window.scrollTo(0, 0);
   };
 
   const CurrentPage: React.FC<PageProps> = PAGES[pageNumber];

@@ -1,0 +1,4 @@
+.pre-end-message-letter .letter {
+  height: calc(1 * var(--min-dimension));
+  margin: var(--common-gap);
+}
