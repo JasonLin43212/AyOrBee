@@ -53,6 +53,6 @@
 
 .my-button-wrapper .my-button .my-button-inner-text {
   color: var(--mint-cream);
-  font-size: calc(0.13 * var(--min-dimension));
+  font-size: calc(0.11 * var(--min-dimension));
   font-weight: bold;
 }
