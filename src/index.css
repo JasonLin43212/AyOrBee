@@ -17,6 +17,16 @@
   --full-width: calc(0.9 * var(--min-dimension));
 }
 
+@font-face {
+  font-family: 'Tahoma';
+  src: url(./fonts/tahoma.ttf) format('tff');
+}
+
+@font-face {
+  font-family: 'Brush Script MT';
+  src: url(./fonts/BRUSHSCI.TTF) format('tff');
+}
+
 body {
   background-color: var(--air-superiority-blue);
   font-family: var(--main-font);
