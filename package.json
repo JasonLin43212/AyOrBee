@@ -1,9 +1,12 @@
 {
   "name": "ayorbee",
   "version": "1.0.0",
+  "homepage": "https://JasonLin43212.github.io/AyOrBee",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --mode=development",
     "build": "webpack --mode production"
   },
@@ -23,6 +26,7 @@
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "typescript": "^5.8.2",
