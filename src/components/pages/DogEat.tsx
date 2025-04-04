@@ -11,7 +11,7 @@ export const DogEats: React.FC<PageProps> = (props: PageProps) => {
       <img src={dogEat} className={"dog-eat"} />
     </div>
     <div className={"normal-text"}>
-      Suddenly, out of nowhere, the Happy Pup snatches the letter from you and runs away!
+      Suddenly, out of nowhere, the Happy Pup snatches the birthday card from you and runs away!
     </div>
     <MyButton
       text={"Chase It!"}

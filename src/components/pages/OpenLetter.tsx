@@ -23,6 +23,6 @@ export const OpenLetter: React.FC<PageProps> = (props: PageProps) => {
       <img src={croc} className={"croc"} />
       <img src={ambessa} className={"ambessa"} />
     </Letter>
-    <MyButton text={"Open Letter"} onClick={props.incrementPage} />
+    <MyButton text={"Open Birthday Card"} onClick={props.incrementPage} />
   </>;
 }
