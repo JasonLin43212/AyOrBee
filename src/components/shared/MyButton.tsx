@@ -8,13 +8,11 @@ export type ByButton = {
 };
 
 export const MyButton: React.FC<ByButton> = (props: ByButton) => {
-  return <div className={`my-button-wrapper ${props.back ? 'back-button-wrapper' : 'forward-button-wrapper'}`}>
+  return <div
+    onClick={() => props.onClick()}
+    className={`my-button-wrapper ${props.back ? 'back-button-wrapper' : 'forward-button-wrapper'}`}
+  >
     <div className={"my-button-side-text"}>{props.text}</div>
-    <button
-      className={"my-button"}
-      onClick={() => props.onClick()}
-    >
-      <span className={"my-button-inner-text"}>{props.back ? "←" : "→"}</span>
-    </button>
+    <div className={"my-button-inner-text"}>{props.back ? "←" : "→"}</div>
   </div>
 } 

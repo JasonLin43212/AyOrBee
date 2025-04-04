@@ -51,6 +51,7 @@
   flex-grow: 1;
 }
 
-.selected-image-wrapper .my-button-wrapper .my-button-side-text {
+.selected-image-wrapper .my-button-wrapper .my-button-side-text,
+.selected-image-wrapper .my-button-wrapper .my-button-inner-text {
   color: var(--mint-cream);
 }

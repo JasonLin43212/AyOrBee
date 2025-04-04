@@ -4,6 +4,7 @@
   align-items: center;
   column-gap: var(--common-gap);
   padding: 0 var(--common-gap) var(--common-gap);
+  cursor: pointer;
 
   animation-duration: 1s;
   animation-delay: 2s;
@@ -42,21 +43,8 @@
   font-size: calc(0.06 * var(--min-dimension));
 }
 
-.my-button-wrapper .my-button {
-  --button-side-length: calc(0.2 * var(--min-dimension));
-  background-color: var(--persian-orange);
-  width: var(--button-side-length);
-  height: var(--button-side-length);
-  border: 3px solid var(--space-cadet);
-  border-radius: 50%;
-  position: relative;
-}
-
-.my-button-wrapper .my-button .my-button-inner-text {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  color: var(--mint-cream);
-  font-size: calc(0.15 * var(--min-dimension));
+.my-button-wrapper .my-button-inner-text {
+  color: var(--space-cadet);
   font-weight: bold;
+  font-size: calc(0.15 * var(--min-dimension));
 }
