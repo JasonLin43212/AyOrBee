@@ -1,3 +1,23 @@
+.open-letter {
+  padding-top: var(--common-gap);
+  animation-name: letter-appear;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes letter-appear {
+  from {
+    translate: 0 -100%;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+
 .open-letter .letter-from {
   position: absolute;
   top: 1em;
@@ -8,4 +28,39 @@
   position: absolute;
   bottom: 1em;
   right: 2em;
+}
+
+.goose {
+  position: absolute;
+  left: 1.6em;
+  top: 19%;
+  width: calc(0.3 * var(--min-dimension));
+}
+
+.egg {
+  position: absolute;
+  top: 40%;
+  right: 0.5em;
+  width: calc(0.2 * var(--min-dimension));
+}
+
+.tomato {
+  position: absolute;
+  top: 0.5em;
+  right: 25%;
+  width: calc(0.2 * var(--min-dimension));
+}
+
+.croc {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  width: calc(0.25 * var(--min-dimension));
+}
+
+.ambessa {
+  position: absolute;
+  left: 0.5em;
+  bottom: 0;
+  width: calc(0.18 * var(--min-dimension));
 }
