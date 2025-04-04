@@ -6,8 +6,8 @@
   --cinereous: #8b786dff;
   --persian-orange: #bf885c;
 
-  --main-font: Tahoma, sans-serif;
-  --letter-font: 'Brush Script MT', cursive;
+  --main-font: Tahoma;
+  --letter-font: 'Brush Script MT';
 
   --min-dimension: min(100vh, 100vw);
   --common-gap: calc(0.05 * var(--min-dimension));
@@ -19,12 +19,12 @@
 
 @font-face {
   font-family: 'Tahoma';
-  src: url(./fonts/tahoma.ttf) format('tff');
+  src: url(./fonts/tahoma.ttf);
 }
 
 @font-face {
   font-family: 'Brush Script MT';
-  src: url(./fonts/BRUSHSCI.TTF) format('tff');
+  src: url(./fonts/BRUSHSCI.TTF);
 }
 
 body {
