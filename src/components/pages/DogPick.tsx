@@ -59,7 +59,7 @@ export const DogPick: React.FC<PageProps> = (props: PageProps) => {
   return <>
     <div className={"normal-text"}>
       You chased the Happy Pup until you cornered it at a bakery.
-      <div className={"bold-text"}>Catch it!</div>
+      <div className={"catch-it"}>Catch it!</div>
     </div>
 
     <ImagePicker

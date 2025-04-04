@@ -39,7 +39,7 @@
 .my-button-wrapper .my-button-side-text {
   color: var(--space-cadet);
   font-weight: bold;
-  font-size: calc(0.05 * var(--min-dimension));
+  font-size: calc(0.06 * var(--min-dimension));
 }
 
 .my-button-wrapper .my-button {
@@ -49,10 +49,14 @@
   height: var(--button-side-length);
   border: 3px solid var(--space-cadet);
   border-radius: 50%;
+  position: relative;
 }
 
 .my-button-wrapper .my-button .my-button-inner-text {
+  position: absolute;
+  top: 0;
+  left: 15%;
   color: var(--mint-cream);
-  font-size: calc(0.11 * var(--min-dimension));
+  font-size: calc(0.15 * var(--min-dimension));
   font-weight: bold;
 }

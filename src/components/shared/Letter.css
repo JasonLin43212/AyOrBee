@@ -8,7 +8,7 @@
 
 .letter {
   position: relative;
-  height: calc(0.65 * var(--min-dimension));
+  height: calc(0.7 * var(--min-dimension));
   width: var(--full-width);
   background-color: var(--khaki);
   font-weight: bold;
