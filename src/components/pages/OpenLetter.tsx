@@ -13,7 +13,6 @@ import ambessa from '../../images/ambessa.png';
 export const OpenLetter: React.FC<PageProps> = (props: PageProps) => {
 
   return <>
-    {/* TODO: add images of tomatoes, eggs, cupcake, canadian goose, cat, snail, zucchini, kombat squash */}
     <Letter className={"open-letter"}>
       <span className={"letter-from"}>From: Jason</span>
       <span className={"letter-to"}>To: Brie</span>

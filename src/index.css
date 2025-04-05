@@ -9,7 +9,7 @@
   --main-font: "Knewave", system-ui;
   --letter-font: "Pacifico", cursive;
 
-  --min-dimension: min(100vh, 100vw);
+  --min-dimension: min(100dvh, 100dvw);
   --common-gap: calc(0.05 * var(--min-dimension));
   --common-font-size: calc(0.06 * var(--min-dimension));
   --common-border-radius: calc(0.02 * var(--min-dimension));
@@ -40,4 +40,23 @@ body {
 
 .bold-text {
   font-weight: bold;
+}
+
+.fall-down-text {
+  animation-name: fall-down;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes fall-down {
+  from {
+    transform: translate(0, -100vh);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
 }

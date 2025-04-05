@@ -7,7 +7,7 @@ export const AfterDogMessage: React.FC<PageProps> = (props: PageProps) => {
   return <>
     <div className={"centered-text"}>
       <div className={"normal-text"}>
-        Unfortunately, the Happy Pup ate some of the birthday card. I guess we will never know what I wanted to tell you.
+        Unfortunately, the Happy Pup ate some of the birthday card. I guess we will never know what I wanted to tell you :^)
       </div>
     </div>
     <MyButton

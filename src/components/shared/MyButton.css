@@ -4,7 +4,6 @@
   align-items: center;
   column-gap: var(--common-gap);
   padding: 0 var(--common-gap) var(--common-gap);
-  cursor: pointer;
 
   animation-duration: 1s;
   animation-delay: 2s;
@@ -17,34 +16,33 @@
 
 @keyframes button-fade-in {
   from {
-    opacity: 0;
+    transform: translate(-100vw);
     pointer-events: none;
   }
 
   to {
-    opacity: 1;
+    transform: translate(0);
     pointer-events: all;
   }
 }
 
 .forward-button-wrapper {
   align-self: flex-end;
-  flex-direction: row;
 }
 
 .back-button-wrapper {
   align-self: flex-start;
-  flex-direction: row-reverse;
 }
 
-.my-button-wrapper .my-button-side-text {
+.my-button-wrapper .my-button {
   color: var(--space-cadet);
   font-weight: bold;
   font-size: calc(0.06 * var(--min-dimension));
-}
-
-.my-button-wrapper .my-button-inner-text {
-  color: var(--space-cadet);
-  font-weight: bold;
-  font-size: calc(0.15 * var(--min-dimension));
+  padding: 0.5em;
+  border: 3px solid var(--space-cadet);
+  background-color: var(--persian-orange);
+  border-radius: var(--common-border-radius);
+  display: flex;
+  align-items: center;
+  column-gap: var(--common-gap);
 }

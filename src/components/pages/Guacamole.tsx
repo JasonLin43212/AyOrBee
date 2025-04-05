@@ -54,7 +54,7 @@ shuffleArray(guacChoices);
 
 export const Guacamole: React.FC<PageProps> = (props: PageProps) => {
   return <>
-    <div className={"normal-text"}>
+    <div className={"normal-text fall-down-text"}>
       Pick your favorite guacamole!
     </div>
     <ImagePicker

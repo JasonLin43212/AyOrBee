@@ -1,5 +1,7 @@
 import React from 'react';
 import './MyButton.css';
+import left from '../../images/left.png';
+
 
 export type ByButton = {
   text: string;
@@ -9,9 +11,10 @@ export type ByButton = {
 
 export const MyButton: React.FC<ByButton> = (props: ByButton) => {
   return <div
-    onClick={() => props.onClick()}
     className={`my-button-wrapper ${props.back ? 'back-button-wrapper' : 'forward-button-wrapper'}`}
   >
-    <div className={"my-button-side-text"}>{props.back ? "← " : ""}{props.text}{!props.back ? " →" : ""}</div>
+    <button className={"my-button"} onClick={() => props.onClick()}>
+      {props.text}
+    </button>
   </div>
 } 

@@ -57,7 +57,7 @@ shuffleArray(dogChoices);
 
 export const DogPick: React.FC<PageProps> = (props: PageProps) => {
   return <>
-    <div className={"normal-text"}>
+    <div className={"normal-text fall-down-text"}>
       You chased the Happy Pup until you cornered it at a bakery.
       <div className={"catch-it"}>Catch it!</div>
     </div>

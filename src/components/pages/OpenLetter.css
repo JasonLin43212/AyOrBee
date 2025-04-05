@@ -1,5 +1,5 @@
 .open-letter {
-  animation-name: letter-appear;
+  animation-name: letter-appear !important;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   animation-duration: 1s;
